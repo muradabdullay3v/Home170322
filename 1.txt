@@ -1,0 +1,44 @@
+using System;
+
+class HT1
+{
+
+  static void Main ()
+  {
+    Console.WriteLine("Index value: " + IndexOf("Salam",'m',2,3));
+  }
+
+  static int IndexOf (string word,char simvol)
+  {
+    for (int i = 0; i < word.Length; i++)
+      {
+         if(word[i] == simvol){
+             return i;
+         }
+      }
+      return -1;
+  }
+  
+   static int IndexOf (string word,char simvol,int index)
+  {
+    for (int i = index; i < word.Length; i++)
+      {
+         if(word[i] == simvol){
+             return i;
+         }
+      }
+      return -1;
+  }
+  
+     static int IndexOf (string word,char simvol,int index,int count)
+  {
+    for (int i = index; i <= count; i++)
+      {
+         if(word[i] == simvol){
+             return i;
+         }
+      }
+      return -1;
+  }
+
+}
